@@ -7,23 +7,20 @@ module.exports = {
 
   development: {
     client: 'sqlite3',
-    connection: {
-      filename: './db.sqlite'
-    },
+    connection: ":memory:",
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations',
+      directory: path.join(__dirname, "migrations")
     },
     useNullAsDefault: true
   },
-  production: {
+  development: {
     client: 'sqlite3',
-    connection: {
-      filename: './db.sqlite'
-    },
+    connection: ":memory:",
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations',
+      directory: path.join(__dirname, "migrations")
     },
     useNullAsDefault: true
-  }
-
+  },
 };
