@@ -109,6 +109,6 @@ io.on("connection", async (socket) => {
   })
 });
 
-server.listen(process.env.PORT, () => {
+io.listen(process.env.PORT, () => {
   console.log(`listening on port ${process.env.PORT}`);
 });
