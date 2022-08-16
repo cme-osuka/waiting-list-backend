@@ -1,1 +1,1 @@
-release: npx hello-world-npx
+release: npx cowsay
