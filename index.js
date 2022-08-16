@@ -8,7 +8,7 @@ const knex = require("./db");
 
 const io = new Server({
   cors: {
-    origin: "https://osuka-waitinglist.herokuapp.com/",
+    origin: "https://osuka-waitinglist.herokuapp.com",
     methods: ["GET", "POST"],
     credentials: true
   },
